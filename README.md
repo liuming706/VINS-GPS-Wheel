@@ -16,7 +16,8 @@ Ubuntu  16.04.
 ROS Kinetic. [ROS Installation](http://wiki.ros.org/ROS/Installation)
 additional ROS pacakge
 ```
-    sudo apt-get install ros-YOUR_DISTRO-cv-bridge ros-YOUR_DISTRO-tf ros-YOUR_DISTRO-message-filters ros-YOUR_DISTRO-image-transport
+    sudo apt-get install ros-noetic-cv-bridge ros-noetic-tf ros-noetic-message-filters ros-noetic-image-transport 
+    sudo apt install libceres-dev
 ```
 ### 1.2 **Dependencies**
 Follow [Ceres Installation](http://ceres-solver.org/installation.html), remember to **make install**.
@@ -39,7 +40,7 @@ Open four terminals, launch the vins_estimator, rviz and pubish the data file re
 ```
     roslaunch vins_estimator kaist.launch 
     rosrun multisensor_fusion multisensor_fusion_node (optional, for GPS)
-    rosrun vins_estimator kaist_pub YOUR_PATH_TO_DATASET/KAIST/urban28/urban28-pankyo
+    rosrun vins_estimator kaist_pub /home/ubt/workspace/datasets/urban28-pankyo
     roslaunch vins_estimator vins_rviz.launch
 ```
 ## 5. Plan
