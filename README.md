@@ -39,7 +39,7 @@ Open four terminals, launch the vins_estimator, rviz and pubish the data file re
 ```
     roslaunch vins_estimator kaist.launch 
     rosrun multisensor_fusion multisensor_fusion_node (optional, for GPS)
-    rosrun vins_estimator kaist_pub YOUR_PATH_TO_DATASET/KAIST/urban28/urban28-pankyo
+    rosrun vins_estimator kaist_pub ~/workspace/datasets/KAIST/urban28-pankyo
     roslaunch vins_estimator vins_rviz.launch
 ```
 ## 5. Plan
